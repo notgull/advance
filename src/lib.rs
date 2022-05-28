@@ -38,13 +38,13 @@ use std::io::IoSlice;
 ///
 /// This is equivalent to [`IoSlice::advance()`], but it can be used on Stable
 /// Rust.
-/// 
+///
 /// ## Example
-/// 
+///
 /// ```rust
 /// use advance::advance;
 /// use std::io::IoSlice;
-/// 
+///
 /// let mut slice = IoSlice::new(&[1, 2, 3, 4, 5]);
 /// advance(&mut slice, 2);
 /// assert_eq!(&*slice, &[3, 4, 5]);
